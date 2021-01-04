@@ -8,7 +8,11 @@ function Home() {
         <View style={style.body}>
 
             <View style={style.header}>
-                <Text type="medium" style={style.title}>Restaurants</Text>
+                <Text type="bold" style={style.title}>Restaurants</Text>
+                
+                <Text>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </Text>
             </View>
 
         </View>

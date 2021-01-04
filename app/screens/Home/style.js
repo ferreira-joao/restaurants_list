@@ -6,12 +6,15 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: commons.defaultBackgroundColor,
         paddingVertical: 26,
-        paddingHorizontal: 13
     },
     header: {
+        paddingHorizontal: 13,
         paddingBottom: 10,
+        borderBottomWidth: 1,
+        borderBottomColor: '#eee',
     },
     title: {
         fontSize: 30,
+        marginBottom: 10,
     }
 });
