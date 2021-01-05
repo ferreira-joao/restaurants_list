@@ -4,6 +4,7 @@ import Text from '../Text';
 import Icon from 'react-native-vector-icons/Feather';
 import ClearButton from '../Buttons/ClearButton';
 import ApplyButton from '../Buttons/ApplyButton';
+import SimpleSwitch from '../SimpleSwitch';
 import style from './style.js';
 
 function ModalMenu({visible, onPress}) {
@@ -29,6 +30,11 @@ function ModalMenu({visible, onPress}) {
                 <View style={style.buttonsContainer}>
                     <ClearButton />
                     <ApplyButton />
+                </View>
+
+                <View style={style.openNowContainer}>
+                    <Text type="regular">OPEN NOW</Text>
+                    <SimpleSwitch />
                 </View>
                 
             </View>

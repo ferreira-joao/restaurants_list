@@ -22,6 +22,15 @@ export default StyleSheet.create({
         borderTopColor: commons.defaultBorderColor,
         borderBottomColor: commons.defaultBorderColor,
         paddingVertical: 13,
+        paddingHorizontal: 13
+    },
+    openNowContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingVertical: 15,
         paddingHorizontal: 13,
+        justifyContent: 'space-between',
+        borderBottomWidth: 1,
+        borderBottomColor: commons.defaultBorderColor,
     }
 });
