@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View } from 'react-native';
 import Text from '../../components/Text';
 import ModalButton from '../../components/Buttons/ModalButton';
+import ModalMenu from '../../components/ModalMenu';
 import style from './style.js';
 
 function Home() {
+    const [visible, setVisible] = useState(false);
+
+    function toogleModal() {
+        setVisible(!visible);
+    };
+
     return(
         <View style={style.body}>
 
@@ -19,7 +26,8 @@ function Home() {
             <View style={style.filterContainer}>
                 <Text style={style.filterText}>Filter By:</Text>
 
-                <ModalButton />
+                <ModalMenu visible={visible} onPress={toogleModal} />
+                <ModalButton onPress={toogleModal} />
             </View>
 
         </View>
