@@ -6,6 +6,7 @@ import ClearButton from '../Buttons/ClearButton';
 import ApplyButton from '../Buttons/ApplyButton';
 import SimpleSwitch from '../SimpleSwitch';
 import ControlTab from '../ControlTab';
+import CategoryFilter from '../CategoryFilter';
 import style from './style.js';
 
 function ModalMenu({visible, onPress}) {
@@ -43,6 +44,14 @@ function ModalMenu({visible, onPress}) {
                     <ControlTab />
                 </View>
                 
+                <View style={style.categoryContainer}>
+                    <View style={style.categoryTexts}>
+                        <Text type="bold">CATEGORIES</Text>
+                        <Text type="regular">Select one</Text>
+                    </View>
+                    <CategoryFilter />
+                </View>
+
             </View>
         </Modal>
     );

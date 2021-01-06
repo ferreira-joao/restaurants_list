@@ -41,5 +41,16 @@ export default StyleSheet.create({
     },
     priceContainerText: {
         marginBottom: 15
+    },
+    categoryContainer: {
+        paddingVertical: 15,
+        paddingHorizontal: 13,
+        borderBottomWidth: 1,
+        borderBottomColor: commons.defaultBorderColor,
+    },
+    categoryTexts: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 15
     }
 });
