@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Feather';
 import ClearButton from '../Buttons/ClearButton';
 import ApplyButton from '../Buttons/ApplyButton';
 import SimpleSwitch from '../SimpleSwitch';
+import ControlTab from '../ControlTab';
 import style from './style.js';
 
 function ModalMenu({visible, onPress}) {
@@ -33,8 +34,13 @@ function ModalMenu({visible, onPress}) {
                 </View>
 
                 <View style={style.openNowContainer}>
-                    <Text type="regular">OPEN NOW</Text>
+                    <Text type="regular">OPEN NOW:</Text>
                     <SimpleSwitch />
+                </View>
+                
+                <View style={style.priceContainer}>
+                    <Text style={style.priceContainerText}>PRICE:</Text>
+                    <ControlTab />
                 </View>
                 
             </View>

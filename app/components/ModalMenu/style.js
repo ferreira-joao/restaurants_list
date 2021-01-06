@@ -32,5 +32,14 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         borderBottomWidth: 1,
         borderBottomColor: commons.defaultBorderColor,
+    },
+    priceContainer: {
+        paddingVertical: 15,
+        paddingHorizontal: 13,
+        borderBottomWidth: 1,
+        borderBottomColor: commons.defaultBorderColor,
+    },
+    priceContainerText: {
+        marginBottom: 15
     }
 });
