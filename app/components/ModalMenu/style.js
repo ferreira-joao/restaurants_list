@@ -43,7 +43,8 @@ export default StyleSheet.create({
         marginBottom: 15
     },
     categoryContainer: {
-        paddingVertical: 15,
+        paddingTop: 15,
+        paddingBottom: 30,
         paddingHorizontal: 13,
         borderBottomWidth: 1,
         borderBottomColor: commons.defaultBorderColor,

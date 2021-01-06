@@ -1,19 +1,15 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import RadioForm from 'react-native-simple-radio-button';
+import category_data from './data';
 
 function CategoryFilter() {
-    const [radioValue, setRadioValue] = useState(0)
-
-    const radio_props = [
-        { label: 'param1', value: 0 },
-        { label: 'param2', value: 1 }
-    ];
+    const [radioValue, setRadioValue] = useState(0);
 
     return (
         <View>
             <RadioForm
-                radio_props={radio_props}
+                radio_props={category_data}
                 initial={radioValue}
                 onPress={(value) => setRadioValue(value)}
                 buttonColor={'#002B56'}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Modal, Alert, TouchableOpacity } from 'react-native';
+import { ScrollView, View, Modal, Alert, TouchableOpacity } from 'react-native';
 import Text from '../Text';
 import Icon from 'react-native-vector-icons/Feather';
 import ClearButton from '../Buttons/ClearButton';
@@ -18,7 +18,7 @@ function ModalMenu({visible, onPress}) {
                 Alert.alert("Modal has been closed.");
             }}
         >
-            <View style={style.modalContainer}>
+            <ScrollView style={style.modalContainer}>
 
                 <View style={style.modalHeader}>
                     <Text type="regular">Filter By</Text>
@@ -52,7 +52,7 @@ function ModalMenu({visible, onPress}) {
                     <CategoryFilter />
                 </View>
 
-            </View>
+            </ScrollView>
         </Modal>
     );
 }
