@@ -16,7 +16,6 @@ export default StyleSheet.create({
     },
     title: {
         fontSize: 30,
-        marginBottom: 10,
     },
     filterText: {
         marginRight: 5
@@ -24,6 +23,15 @@ export default StyleSheet.create({
     filterContainer: {
         flexDirection: 'row',
         justifyContent: 'flex-start',
+        paddingHorizontal: 13,
+    },
+    allTitle: {
+        fontSize: 30,
+        paddingHorizontal: 13,
+        marginTop: 10,
+        marginBottom: 10
+    },
+    listContainer: {
         paddingHorizontal: 13,
     }
 });

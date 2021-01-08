@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { View, FlatList } from 'react-native';
 import Text from '../../components/Text';
 import ModalButton from '../../components/Buttons/ModalButton';
 import ModalMenu from '../../components/ModalMenu';
+import Restaurant from '../../components/Restaurant';
+import restaurant_data from './data';
 import style from './style.js';
 
 function Home() {
@@ -11,6 +13,14 @@ function Home() {
     function toogleModal() {
         setVisible(!visible);
     };
+
+    function renderRestaurant({ item }) {
+        return <Restaurant name={item.name} 
+        rating={item.rating}
+        categories={item.categories}
+        price={item.price}
+        available={item.available} />
+    }
 
     return(
         <View style={style.body}>
@@ -28,6 +38,16 @@ function Home() {
 
                 <ModalMenu visible={visible} onPress={toogleModal} />
                 <ModalButton onPress={toogleModal} />
+            </View>
+
+            <Text type="bold" style={style.allTitle}>All Restaurants</Text>
+
+            <View style={style.listContainer}>
+                <FlatList 
+                    data={restaurant_data}
+                    renderItem={renderRestaurant}
+                    keyExtractor={(item) => item.id.toString()}
+                />
             </View>
 
         </View>
