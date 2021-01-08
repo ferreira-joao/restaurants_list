@@ -4,6 +4,7 @@ import Text from '../../components/Text';
 import ModalButton from '../../components/Buttons/ModalButton';
 import ModalMenu from '../../components/ModalMenu';
 import Restaurant from '../../components/Restaurant';
+import LoadButton from '../../components/Buttons/LoadButton';
 import restaurant_data from './data';
 import style from './style.js';
 
@@ -48,6 +49,10 @@ function Home() {
                     renderItem={renderRestaurant}
                     keyExtractor={(item) => item.id.toString()}
                 />
+            </View>
+
+            <View style={style.loadMoreContainer}>
+                <LoadButton />
             </View>
 
         </View>

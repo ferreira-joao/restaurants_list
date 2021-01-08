@@ -33,5 +33,11 @@ export default StyleSheet.create({
     },
     listContainer: {
         paddingHorizontal: 13,
+    },
+    loadMoreContainer: {
+        flex: 1,
+        alignItems: 'center',
+        marginTop: 20,
+        paddingHorizontal: 13,
     }
 });
