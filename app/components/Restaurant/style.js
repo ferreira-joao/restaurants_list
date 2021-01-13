@@ -8,8 +8,7 @@ export default StyleSheet.create({
     },
     image: {
         width: 110,
-        height: 110,
-        backgroundColor: commons.defaultTextColor
+        height: 110
     },
     information: {
         marginLeft: 20,
@@ -40,5 +39,5 @@ export default StyleSheet.create({
     learnText: {
         color: commons.mainColor,
         marginRight: 5
-    },
+    }
 });

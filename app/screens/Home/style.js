@@ -32,6 +32,7 @@ export default StyleSheet.create({
         marginBottom: 10
     },
     listContainer: {
+        flex: 1,
         paddingHorizontal: 13,
     },
     loadMoreContainer: {
